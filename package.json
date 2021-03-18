@@ -1,0 +1,19 @@
+{
+  "name": "tab-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"No test specified\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nazarpunk/tab-ts.git"
+  },
+  "author": "nazarpunk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nazarpunk/tab-ts/issues"
+  },
+  "homepage": "https://github.com/nazarpunk/tab-ts#readme"
+}

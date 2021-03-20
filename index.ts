@@ -12,10 +12,10 @@ if (!!window.SharedWorker) {
 	//console.log('Message posted to worker');
 
 	/*
-	worker.port.onmessage = function(e) {
-		console.log('Message received from worker');
-		console.log(e.lastEventId);
-	}
+	 worker.port.onmessage = function(e) {
+	 console.log('Message received from worker');
+	 console.log(e.lastEventId);
+	 }
 
 	 */
 }
@@ -36,7 +36,7 @@ const update = () => {
 		if (!last || v.ts > last.ts) last = v;
 	}
 	is_current = last ? last.id === id : false;
-	document.title = is_current ? `+` : `-`;
+	//document.title = is_current ? `+` : `-`;
 }
 
 const event = () => {
@@ -66,7 +66,7 @@ window.addEventListener(`beforeunload`, () => {
 
 // noinspection JSUnusedGlobalSymbols
 const is_tab_active = (): boolean => {
-	return true;
+	return is_current;
 }
 
 export {is_tab_active};

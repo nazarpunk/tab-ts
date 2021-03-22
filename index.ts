@@ -65,8 +65,8 @@ window.addEventListener(`beforeunload`, () => {
 });
 
 // noinspection JSUnusedGlobalSymbols
-const is_tab_active = (): boolean => {
-	return is_current;
+const Tab = {
+	is_active : (): boolean => is_current
 }
 
-export {is_tab_active};
+export {Tab};
